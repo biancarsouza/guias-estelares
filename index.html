@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+
+        <meta charset="utf-8">
+        <!-- Para aceitar a maior quantia de caracteres. -->
+        <title>Anatomia do Documento</title>
+
+    </head>
+
+    <body>
+
+        <h1 title="Um título" tabindex="1">Um título</h1>
+        <h2 title="Segundo título" tabindex="2">Segundo título</h2>
+
+        <!-- Como abrir o html preview: ctrl + shift + p; preview -->
+
+        <!-- Quando se usa um tabindex na div e enumera é para a ordem que o elemento será selecionado com a tecla tab. 
+        Quando se usa um title é para aparecer um aviso quando descansa o mouse sobre um elemento. -->
+
+        <!-- alt + z = quebra automática. -->
+
+        <div title="Divisão" tabindex="3">
+
+            <p>Um <em>parágrafo,</em> <br>dois <strong>parágrafos.</strong></p>
+            
+            <a href="https://app.rocketseat.com.br/node/o-guia-estelar-de-html/group/links/lesson/conhecendo-a-tag-ancora">Aula que parou</a>
+
+        </div>
+
+        <!-- br faz quebra dentro do p. -->
+
+        <br>
+        <br>
+
+        <h1>Suco detox</h1>
+        <h2>Ingredientes</h2>
+
+        <ol>
+            <li>3 folhas de couve;</li>
+            <li>1 laranja;</li>
+            <li>1 pedacinho de gengibre;</li>
+            <li>300ml de água;</li>
+            <li>Adoçante a gosto;</li>
+            <li>Gelo a gosto.</li>
+        </ol>
+
+        <!-- ol é ordenada, põe números na frente como se fosse passo a passo. ul põe apenas bolinhas (bullet points). -->
+
+        <br>
+
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+        <p>O
+            <strong>Elemento HTML <code>&lt;blockquote&gt;</code></strong> (ou <em>HTML Block Quotation Element</em>) indica que um texto externo foi citado.
+        </p>
+        </blockquote>
+
+        <p>De acordo com <a href="https://developer.mozilla.org/en-US/docs/Webs/HTML/Element/blockquote">
+            <cite>página MDN blockquote</cite></a>:
+        </p>
+
+        <p>O elemento quote - <code>&lt;q&gt;</code> - é <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">usado para citações curtas que não precisam de parágrafos ou quebras de linha.</q> -- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"><cite>MDN q page</cite></a>.</p>
+
+        <br>
+        <p>Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos da web.</p>
+
+        <!-- Quando colocamos o abbr no meio da frase, é que usamos uma abreviação e queremos que apareça o significado dela ao descansar o mouse em cima. -->
+
+        <address>
+            <p>Bianca Ribeiro de Souza<br>
+            <strong>Santa Rita do Sapucaí, MG</strong></p>
+        </address>
+
+        <!-- Detalhes de contato. -->
+
+        <h2>Glossário</h2>
+        <dl>
+            <dt>Hypertext</dt>
+            <dd>É um hiper texto com possibilidades...</dd>
+
+            <dt>Markup</dt>
+            <dd>Marcação do texto...</dd>
+
+            <dt>Language</dt>
+            <dd>Linguagem com sua semântica e sintaxe.</dd>
+        </dl>
+
+        <!-- dl é uma lista de descrição, onde dt fala o termo e dd o explica. -->
+
+        <pre>
+            <code>
+                <xmp>
+                    <button>Aperte aqui!</button>
+                </xmp>
+            </code>
+        </pre>
+
+        <!--pre e code são para colocar um pedaço de código na página, a diferença é que pre mantém o recuo. xmp serve para ler os sinais, sem ele tem que usar &lt; e &gt;. -->
+
+        <div>
+            <button>Close</button>
+            <button>Open</button>
+        </div>
+        
+        <div>
+            <button>Play music</button>
+            <button>Pause music</button>
+        </div>
+
+        <span><button>Open</button><button>Close</button></span>
+        <span><button>Play music</button><button>Pause music</button></span>
+
+        <!-- div agrupa elementos como se fosse uma caixa. span deixa tudo como se não tivesse caixa, se você quiser usar uma cor em uma única palavra da frase por exemplo vocẽ usa ele. -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a href="">Link</a> <br>
+        <a download="practice.html">Download</a> <br>
+        <a href="mailto:">E-mail</a> <br>
+        <a href="tel:">Telefone</a> <br>
+        <a href="#algo">Te direciona para a parte da página com o elemento que tem a id escrita dentro do href</a> <br>
+
+        <!-- Com a tag a normal você abre o link em cima da página que você está, mas se dentro colocar um target="_blank" (se colocar "_self" não muda o comportamento, abre em cima da guia) ele abre o link em outra guia. -->
+        
+        <br>
+        <br>
+        <br>
+
+        <!-- Para procurar algo em uma pasta você coloca nomedapasta/nomedoarquivo. Para pega um arquivo que está em uma pasta diferente da sua e não seja sua subpasta você usa ../nomedapasta/nomedoarquivo. -->
+
+        
+
+    </body>
+
+</html>
