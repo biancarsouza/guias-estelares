@@ -1,0 +1,33 @@
+* { /* Todas as configurações daqui serão atribuídas a todos os elementos da página. */
+
+    margin: 0; /* Muda a margem do elemento. */
+
+}
+
+#container {
+
+    width: 200px; /* Muda a largura do elemento. */
+
+}
+
+.m-40 {
+
+    margin: 40px;
+
+}
+
+h2 {
+
+    color: blue; /* Muda a cor do elemento. */
+    font-size: 60px; /* Muda o tamanho do elemento. */
+    background: gray; /* Muda a cor de fundo do elemento. */
+
+}
+
+h1 {
+
+    border: 1px solid red; /* Muda a borda do elemento. */
+    margin: 20px;
+    padding: 60px; /* Adiciona espaço dentro da "caixa" do elemento. */
+
+}
