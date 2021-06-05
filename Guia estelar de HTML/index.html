@@ -3,9 +3,26 @@
 
     <head>
 
-        <meta charset="utf-8">
-        <!-- Para aceitar a maior quantia de caracteres. -->
-        <title>Anatomia do Documento</title>
+        <title>Guia estelar de HTML</title>
+        <meta name="description" content="Anotando comandos aprendidos nos guias estelares da rocketseat."> <!-- Descrição do site embaixo do nome quando você pesquisa no google. -->
+
+        <meta charset="utf-8"> <!-- Para aceitar a maior quantia de caracteres. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Portabilidade para mobile. -->
+
+        <link rel="icon" href="bakugou.jpg"/> <!-- Coloca um ícone do lado do nome da guia. -->
+
+        <meta name="robots" content="index, follow"> <!-- Esse é o padrão, quando você não quiser indexar a página ou não seguir para ela por link é só trocar por noindex e nofollow. -->
+
+        <!-- Os comandos a seguir são para montar um card para quando compartilhar o link no facebook, utiliza-se o open graph. -->
+        <meta property="og:image" content="bakugou.jpg">
+        <meta property="og:description" content="Anotando comandos aprendidos nos guias estelares da rocketseat.">
+        <meta property="og:title" content="Guia estelar de HTML">
+
+        <!-- Os comandos a seguir são para montar um card para quando compartilhar o link no twitter. -->
+        <meta name="twitter:image" content="bakugou.jpg">
+        <meta name="twitter:description" content="Anotando comandos aprendidos nos guias estelares da rocketseat.">
+        <meta name="twitter:title" content="Guia estelar de HTML">
+
 
     </head>
 
@@ -132,7 +149,92 @@
 
         <!-- Para procurar algo em uma pasta você coloca nomedapasta/nomedoarquivo. Para pega um arquivo que está em uma pasta diferente da sua e não seja sua subpasta você usa ../nomedapasta/nomedoarquivo. -->
 
-        
+        <table> <!-- Tabela simples. -->
+
+            <caption>Pessoas por idade</caption> <!-- Título da tabela. -->
+
+            <thead> <!-- Onde coloca a linha do cabeçalho. -->
+                <tr> <!-- Linha da tabela. -->
+                    <th>Nome</th> <!-- Coluna, escrito dentro para cabeçalho. -->
+                    <th>Idade</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- Onde fica o corpo da tabela. -->
+                <tr>
+                    <td>Bianca</td> <!-- Coluna, escrito dentro para linha normal. -->
+                    <td>17</td>
+                </tr>
+
+                <tr>
+                    <td>Livia</td>
+                    <td>14</td>
+                </tr>
+            </tbody>
+
+            <tfoot> <!-- Onde fica o rodapé da tabela. -->
+                <tr>
+                    <td>Total:</td>
+                    <td>2 pessoas</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <br>
+        <br>
+        <br>
+
+        <table>
+
+            <caption>Produzidos vs vendidos por loja</caption>
+
+            <colgroup> <!-- Para agrupar e organizar as colunas. -->
+
+                <col>
+                <col span="2" style="background-color: orange;">
+                <col span="2" style="background-color: blue;">
+
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th rowspan="2"></th> <!-- rowspan="2" faz ocupar duas linhas. -->
+                    <th colspan="2" scope="colgroup">Alvorada</th> <!-- colspan="2" faz ocupar duas colunas. scope="colgroup" diz que o header é referente ao agrupamento de colunas. -->
+                    <th colspan="2" scope="colgroup">Unissul</th>
+                </tr>
+
+                <tr>
+                    <th scope="col">Produzidos</th> <!-- Nesse o scope é referente a coluna. -->
+                    <th scope="col">Vendidos</th>
+                    <th scope="col">Produzidos</th>
+                    <th scope="col">Vendidos</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">Vassouras</th> <!-- Nesse o scope é referente as linhas. -->
+                    <td>50</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Baldes</th>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>25</td>
+                </tr>
+
+            </tbody>
+
+
+
+        </table>
+
 
     </body>
 
