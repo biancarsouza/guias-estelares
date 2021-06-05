@@ -35,3 +35,5 @@ h1 {
     padding: 60px; /* Adiciona espaço dentro da "caixa" do elemento. */
 
 }
+
+/* A ordem de "preferência" de stylesheet é inline > tag style > CSS linkado. */
