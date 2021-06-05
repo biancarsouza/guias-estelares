@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap'); */
+/* Para importar fontes dentro do CSS, não é recomendado porque deixa a pesquisa mais lenta. */
+
 * { /* Todas as configurações daqui serão atribuídas a todos os elementos da página. */
 
     margin: 0; /* Muda a margem do elemento. */
@@ -13,6 +16,7 @@
 .m-40 {
 
     margin: 40px;
+    font-family: 'Ranchers', cursive; /* Muda a fonte do elemento. */
 
 }
 
