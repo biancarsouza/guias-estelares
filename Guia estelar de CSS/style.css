@@ -33,7 +33,19 @@ h1 {
     border: 1px solid red; /* Muda a borda do elemento. */
     margin: 20px;
     padding: 60px; /* Adiciona espaço dentro da "caixa" do elemento. */
+    color: cadetblue !important; /* o !important não é recomendado porque ele quebra essa ideia de cascata do CSS. */
+}
+
+.title {
+
+    color:blueviolet;
 
 }
 
-/* A ordem de "preferência" de stylesheet é inline > tag style > CSS linkado. */
+/* A ordem de "preferência" de stylesheet é inline > tag style > CSS linkado. Inline > ID selector > class selector > element type selector > universal selector. */
+
+p {
+
+    margin: 0 auto;
+    padding-left: 15px;
+}
